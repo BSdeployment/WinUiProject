@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="App1.BlankPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+     xmlns:local2="using:App1.ViewModel"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+   
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="10*"/>
+            
+        </Grid.RowDefinitions>
+        
+        
+        <StackPanel Grid.Row="0" Background="AliceBlue">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="1">
+                    <TextBlock  Text="My Lactures" HorizontalAlignment="Center"
+            FontSize="25"
+            Margin="0 10 0 0"
+            Foreground="BlueViolet"
+            FontWeight="Bold"
+            />
+                    <TextBlock
+     
+     FontSize="18"
+     Margin="0 10 0 0"
+     Foreground="Blue"
+     HorizontalAlignment="Center"
+     FontWeight="Bold"
+     Text="this is desc"
+     x:Name="txtDescription"
+     />
+                </StackPanel>
+           
+            <Button Grid.Column="0" x:Name="btngoback" Click="btngoback_Click"
+                    Style="{StaticResource NavigationBackButtonNormalStyle}"
+                    ToolTipService.ToolTip="go back"
+                    
+                    />
+            </Grid>
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="8*"/>
+            </Grid.ColumnDefinitions>
+            <TreeView Grid.Column="0" x:Name="mytree" ItemInvoked="mytree_ItemInvoked" ScrollViewer.HorizontalScrollBarVisibility="Auto">
+
+            </TreeView>
+            <MediaPlayerElement
+                AutoPlay="False"
+                AreTransportControlsEnabled="True"
+                Margin="30" Grid.Column="1" x:Name="videoPlay"/>
+        </Grid>
+
+       
+
+    </Grid>
+</Page>

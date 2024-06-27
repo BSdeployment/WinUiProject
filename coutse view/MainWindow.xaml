@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="App1.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local2="using:App1.ViewModel"
+    mc:Ignorable="d">
+
+
+    <Grid Background="AliceBlue"  AllowDrop="True" x:Name="contentGrid" 
+          Drop="contentGrid_Drop" DragOver="contentGrid_DragOver">
+
+        <TextBlock x:Name="txt"/>
+        <Frame x:Name="myframe">
+            <StackPanel VerticalAlignment="Center"
+                        HorizontalAlignment="Center">
+                <Border BorderThickness="10"
+                        BorderBrush="Gray"
+                        Padding="100"
+                        CornerRadius="20"
+                         
+                       >
+                    <TextBlock HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontWeight="Bold"
+                                FontSize="20"
+                                Foreground="BlueViolet"
+                                MaxWidth="400"
+                                TextWrapping="Wrap"
+                                TextAlignment="Center"
+                                Text="drag and drop here the root foldet that contains all diractorys of your lactures"/>
+                </Border>
+               
+            </StackPanel>
+            
+        </Frame>
+        <!--<Image x:Name="myimg" Width="400" Height="400"/>-->
+        <!--<local:BlankPage1 x:Name="listLactures" Visibility="Collapsed"/>-->
+        
+        
+    </Grid>
+    
+    
+
+
+
+
+</Window>
