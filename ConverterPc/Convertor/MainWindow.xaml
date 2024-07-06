@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="Convertor.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Convertor"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    
+    
+    >
+
+
+    <Grid ScrollViewer.VerticalScrollMode="Enabled" ScrollViewer.VerticalScrollBarVisibility="Visible">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock
+                FontWeight="Bold"
+                FontSize="25"
+                Foreground="BlueViolet"
+                
+                HorizontalAlignment="Center" Text="המרת ערכים - עבור מדעי המחשב"/>
+            <RichTextBlock HorizontalAlignment="Center" MaxWidth="300">
+                <Paragraph TextAlignment="Center">
+                    
+                בחר ערכים להמרה ואז לחץ להתחלת המרה, התוכנה בקוד פתוח וללא זכויות יוצרים.
+                    <Run>develop by</Run>
+                    <Run FontWeight="Bold" Foreground="BlueViolet">Bs DotNet</Run>
+                    <Run>לעוד מידע</Run>
+                    <Hyperlink NavigateUri="https://github.com/BSdeployment/" >GitHub</Hyperlink>
+                    <Run>לערוץ שלי</Run>
+                    <Hyperlink NavigateUri="https://www.youtube.com/@BS-DotNet-ir7bb">YouTube</Hyperlink>
+                    <Run FlowDirection="RightToLeft">לאתר שלי (בבניה)</Run>
+                    <Hyperlink  NavigateUri="https://bsdeployment.github.io/bs-dotnet-and-more/">My Site DotNet</Hyperlink>
+                    
+                </Paragraph>
+            </RichTextBlock>
+
+            <StackPanel BorderBrush="BlueViolet" 
+                        BorderThickness="2"
+                        Padding="30"
+                        CornerRadius="20"
+                        >
+                
+
+                <TextBlock Text="בחר ערכים להמרה" FlowDirection="RightToLeft"
+                           HorizontalAlignment="Center"
+                           FontWeight="Bold"
+                           Margin="0 0 0 25"
+                           />
+                <TextBlock Text="From" Margin="0 0 0 10"/>
+                <ComboBox x:Name="cmbfrom" Width="220" SelectedIndex="0">
+                    <ComboBoxItem Content="text" />
+                    <ComboBoxItem Content="decimel" />
+                    <ComboBoxItem Content="hexdecimel" />
+                    <ComboBoxItem Content="binary" />
+                  
+                    
+                </ComboBox>
+                <TextBlock Text="To" Margin="0 0 0 10"/>
+                <ComboBox x:Name="cmdto" Width="220" SelectedIndex="0">
+                    <ComboBoxItem Content="text" />
+                    <ComboBoxItem Content="decimel" />
+                    <ComboBoxItem Content="hexdecimel" />
+                    <ComboBoxItem Content="binary" />
+
+
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel BorderBrush="BlueViolet"
+                        BorderThickness="2"
+                        CornerRadius="20"
+                        Padding="10"
+                        Margin="0 10 0 0"
+                        >
+                <TextBlock Text="Input" Margin="0 0 0 2"/>
+                <TextBox x:Name="txtinput" MaxWidth="300"/>
+                <Button Content="Done"
+                        Style="{StaticResource AccentButtonStyle}"
+                        HorizontalAlignment="Center"
+                        Margin="0 20 0 0"
+                        x:Name="btnDone"
+                        Click="btnDone_Click"
+                        />
+                <TextBlock Text="Result is"
+                           
+                           />
+                <TextBox IsReadOnly="True" x:Name="txtresult"
+                         Height="5"
+                       
+                         MaxWidth="300"
+                         
+                         />
+            </StackPanel>
+        </StackPanel>
+
+
+        
+    </Grid>
+
+   
+</Window>
