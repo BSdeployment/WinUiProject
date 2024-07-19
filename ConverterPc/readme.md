@@ -2,5 +2,5 @@
 הפרוייקט בד פתוח וניתן להשתמש בו ולשנותו כרצונכם 
 פותח על ידי bs-dotnet 
 
-<img src="https://github.com/BSdeployment/WinUiProject/blob/main/ConverterPc/converterpage.png?raw=true" width="400"/>
+<img src="https://github.com/BSdeployment/WinUiProject/blob/main/ConverterPc/converterpage.png?raw=true" width="800"/>
 
