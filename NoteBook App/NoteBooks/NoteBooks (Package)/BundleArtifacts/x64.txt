@@ -1,0 +1,2 @@
+MainPackage=C:\Users\USER001\source\repos\NoteBooks\NoteBooks\NoteBooks (Package)\bin\x64\Release\NoteBooks (Package)_1.0.2.0_x64.msix
+SymbolPackage=C:\Users\USER001\source\repos\NoteBooks\NoteBooks\NoteBooks (Package)\obj\x64\Release\Symbols\NoteBooks (Package)_1.0.2.0_x64.appxsym
