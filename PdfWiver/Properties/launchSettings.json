@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "PdfWiver (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "PdfWiver (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
